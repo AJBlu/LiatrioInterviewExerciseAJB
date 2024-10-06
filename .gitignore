@@ -1,3 +1,10 @@
+#ignore visual studio index files
+*.vsidx
+slnx.sqlite
+*.wsuo
+VSWorkspaceState.json
+#recommanded node gitignore files
+
 # Logs
 logs
 *.log
