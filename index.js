@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
         message: "My name is Alexander Blue",
         timestamp: Date.now()
     };
-    res.status(200).send(JSON.stringify(sendThis) + ";")
+    res.status(200).send(JSON.stringify(sendThis));
 })
 
 app.listen(port, () => {
