@@ -1,5 +1,5 @@
-.vsidx
-.sqlite
+*.vsidx
+*.sqlite
 
 # Logs
 logs
