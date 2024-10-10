@@ -18,6 +18,6 @@ jobs:
         - name: Build + Push
           run: |
             docker image build -t app_container .
-            docker run -dp 127.0.0.1:80:80 app_container
+            docker run -dp 172.17.0.1:80:80 app_container
         - name: run tests
           uses: liatrio/github-actions/apprentice-action@master
