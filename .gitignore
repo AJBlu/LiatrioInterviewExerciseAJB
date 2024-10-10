@@ -1,3 +1,6 @@
+.vsidx
+.sqlite
+
 # Logs
 logs
 *.log
