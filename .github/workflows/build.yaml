@@ -1,0 +1,23 @@
+name: Build Docker Container
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    build:
+    
+
+        runs-on: ubuntu-latest
+
+
+        steps:
+        - uses: actions/checkout@v1
+        - name: Build + Push
+          run: |
+            docker image build -t app_container .
+            docker run -dp 127.0.0.1:80:80 app_container
+        - name: run tests
+          uses: liatrio/github-actions/apprentice-action@master
