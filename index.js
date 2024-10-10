@@ -3,13 +3,12 @@ const app = express()
 const port = 80
 app.use(express.json())
 
-//creating json object
-const sendThis = {
-    message: "My name is Alexander Blue",
-    timestamp: Date.now()
-};
-
 app.get('/', (req, res) => {
+    //putting sendThis in the get request so it generates a timestamp on request
+    const sendThis = {
+        message: "My name is Alexander Blue",
+        timestamp: Date.now()
+    };
     res.send(JSON.stringify(sendThis))
 })
 
