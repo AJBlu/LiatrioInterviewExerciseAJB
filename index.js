@@ -7,10 +7,10 @@ app.use(express.json())
 const sendThis = {
     message: "My name is Alexander Blue",
     timestamp: Date.now()
-}
+};
 
 app.get('/', (req, res) => {
-    res.json(JSON.stringify(sendThis))
+    res.send(JSON.stringify(sendThis))
 })
 
 app.listen(port, () => {
