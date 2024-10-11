@@ -20,6 +20,4 @@ jobs:
             docker image build -t app_container .
             docker run -dp 172.17.0.1:80:80 app_container
         - name: run tests
-        runs:
-            using: docker
-            image: docker://ghcr.io/liatrio/github-actions/apprentice-action:latest
+          uses: liatrio/github-actions/apprentice-action@apprentice-action-update
