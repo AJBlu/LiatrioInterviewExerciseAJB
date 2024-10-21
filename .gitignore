@@ -2,6 +2,7 @@
 *.sqlite
 VSWorkspaceState.json
 *.wsuo
+
 # Logs
 logs
 *.log
