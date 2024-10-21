@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
         message: "My name is Alexander Blue",
         timestamp: Date.now()
     };
-    res.json(sendThis)
-    //res.send(JSON.stringify(sendThis))
+    //res.json(sendThis)
+    res.send(JSON.stringify(sendThis))
 })
 
 app.listen(port, () => {
