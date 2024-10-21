@@ -1,0 +1,6 @@
+services:
+  liatrio:
+    container_name: liatrio
+    image: ghcr.io/programonaut/svelte-counter:latest
+    ports:
+      - 80:80
